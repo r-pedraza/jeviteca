@@ -1,4 +1,4 @@
 /**
  * Created by raulpedraza on 15/11/15.
  */
-angular.module("javiteca",[]);
+angular.module("jeviteca",[]);

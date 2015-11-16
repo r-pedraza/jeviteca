@@ -2,17 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Jebiteca by Raul Pedraza León</title>
+    <title>Jeviteca by Raul Pedraza León</title>
     <!-- Cargamos los estilos de Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-    <!-- Cargamos los estilos de angular-loading-bar -->
-    <link rel="stylesheet" href="styles/loading-bar.min.css" />
+
 </head>
-<body ng-app="javiteca">
+<body ng-app="jeviteca">
+
+
+<div class="container">
+    <header>
+        <h1>Jeviteca</h1>
+        <h4>By Raúl Pedraza León</h4>
+    </header>
+
+    <div ng-controller="Albums">
+        <table>
+            <tr ng-repeat="album in albums">
+                <td>{{album.text}}</td>
+
+            </tr>
+        </table>
+    </div>
+</div>
 <!--Cargamos la libreria de AngulatJS -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"/>
 <!--Cargamos app.js -->
 <script src="scripts/app.js"/>
+<!--Cargamos los controladores -->
+<script src="scripts/controllers/Albums.js"/>
 
 </body>
 </html>
