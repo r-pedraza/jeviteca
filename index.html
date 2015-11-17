@@ -16,10 +16,31 @@
         <h4>By Raúl Pedraza León</h4>
     </header>
 
+    <nav ng-controller="NavigationBarController">
+
+        <ul class="nav nav-tabs">
+
+            <li role="presentation" ng-class="{'active':albumsInfo()}">
+                <a href="#/albums">Albums</a>
+            </li>
+            <li role="presentation" ng-class="{'actice':bandsInfo()}">
+                <a href="#/bandas">Bands</a>
+            </li>
+
+            <li role="presentation">
+                <a href="#generos">Geners</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!--Contenedor de las vistas -->
+    <section ng-view></section>
     <div ng-controller="Albums">
         <table>
             <tr ng-repeat="album in albums">
-                <td>{{album.text}}</td>
+                <td>{{album.title}}</td>
 
             </tr>
         </table>
@@ -33,9 +54,11 @@
 <script src="scripts/app.js"/>
 
 <!--Cargamos los controladores -->
-<script src="scripts/controllers/Albums.js"/>
-<script src="scripts/controllers/Bands.js"/>
-<script src="scripts/controllers/Geners.js"/>
+<script src="scripts/controllers/AlbumsController.js"/>
+<script src="scripts/controllers/BandsController.js"/>
+<script src="scripts/controllers/GenersController.js"/>
+<script src="scripts/controllers/NavigationBarController.js"/>
+
 
 </body>
 </html>
