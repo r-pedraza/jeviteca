@@ -23,11 +23,11 @@
             <li role="presentation" ng-class="{'active':albumsInfo()}">
                 <a href="#/albums">Albums</a>
             </li>
-            <li role="presentation" ng-class="{'actice':bandsInfo()}">
+            <li role="presentation" ng-class="{'active':bandsInfo()}">
                 <a href="#/bandas">Bands</a>
             </li>
 
-            <li role="presentation">
+            <li role="presentation" ng-class="{'active':genersInfo()}">
                 <a href="#generos">Geners</a>
             </li>
 
@@ -48,16 +48,17 @@
 </div>
 
 <!--Cargamos la libreria de AngulatJS -->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"/>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>`
 
 <!--Cargamos app.js -->
-<script src="scripts/app.js"/>
+<script src="scripts/app.js"></script>
 
 <!--Cargamos los controladores -->
-<script src="scripts/controllers/AlbumsController.js"/>
-<script src="scripts/controllers/BandsController.js"/>
-<script src="scripts/controllers/GenersController.js"/>
-<script src="scripts/controllers/NavigationBarController.js"/>
+<script src="scripts/controllers/AlbumsController.js"></script>
+<script src="scripts/controllers/BandsController.js"></script>
+<script src="scripts/controllers/GenersController.js"></script>
+<script src="scripts/controllers/NavigationBarController.js"></script>
 
 
 </body>
